@@ -2,12 +2,13 @@ version = 0.1
 [default]
 [default.deploy]
 [default.deploy.parameters]
-stack_name = "pipeline-trigger"
-s3_prefix = "pipeline-trigger"
+stack_name = "pipeline-trigger-vishwa"
+s3_prefix = "pipeline-trigger-vishwa"
 region = "us-east-1"
 capabilities = "CAPABILITY_IAM"
 image_repositories = []
-profile = "cicdnew"
+profile = "cicd"
 confirm_changeset = true
-s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1czgrdwk4h4r6"
-parameter_overrides = "PipelineName=\"\" CodeStarConnectionArn=\"arn:aws:codestar-connections:us-east-1:586770803976:connection/de73e7c7-32f1-4988-8fdf-2f9b2a4bca2c\""
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-6vvyn61bi2zg"
+disable_rollback = true
+parameter_overrides = "PipelineName=\"\" CodeStarConnectionArn=\"arn:aws:codestar-connections:us-east-1:731179564832:connection/4359bdf7-d1ff-4b5f-80fa-6be9d163b64a\""
